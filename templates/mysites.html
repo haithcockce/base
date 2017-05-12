@@ -3,8 +3,37 @@
     <title>All my goodies!</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bulma-0.4.1/css/bulma.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
+    <nav class="nav">
+      <div class="nav-center">
+        <a class="nav-item" href="https://github.com/haithcockce">
+          <span class="icon">
+            <i class="fa fa-github"></i>
+          </span>
+        </a>
+        <a class="nav-item" href="https://www.facebook.com/AboveAsBelow">
+          <span class="icon">
+            <i class="fa fa-facebook-square"></i>
+          </span>
+        </a>
+        <a class="nav-item" href="/">
+          <span class="icon">
+            <i class="fa fa-home"></i>
+          </span>
+        </a>
+        <a class="nav-item">
+          <span class="icon">
+            <i class="fa fa-info-circl"></i>
+          </span>
+        </a>
+        <a class="nav-item">
+          Resume
+        </a>
+        <a class="nav-item is-danger" href="mysites">Homebase</a>
+      </div>
+    </nav>
   <section class="section">
     <div class="container">
       <div class="heading">
@@ -23,6 +52,30 @@
         <div class="tile" onclick="location.href='http://haithcock.us:8096'">
           <div class="tile is-child box notification is-success has-text-centered">
             <p class="title" >Emby</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="tile is-ancestor">
+        <div class="tile" onclick="location.href='http://haithcock.us:9091/transmission/web/'">
+          <div class="tile is-child box notification is-danger has-text-centered">
+            <p class="title" >Transmission</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="tile is-ancestor">
+        <div class="tile" onclick="location.href='http://haithcock.us:8888/'">
+          <div class="tile is-child box notification is-warning has-text-centered">
+              <p class="title">Jupyter Notebook</p>
           </div>
         </div>
       </div>
