@@ -1,44 +1,11 @@
 <html>
   <head>
     <title>Why hello there</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bulma-0.4.1/css/bulma.css') }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    {% include '__metas.html' %}
   </head>
   <body>
   
-      <!-- Navigational header -->
-
-<nav class="nav">
-  <div class="nav-center">
-    <a class="nav-item" href="https://github.com/haithcockce">
-      <span class="icon">
-        <i class="fa fa-github"></i>
-      </span>
-    </a>
-    <a class="nav-item" href="https://www.facebook.com/AboveAsBelow">
-      <span class="icon">
-        <i class="fa fa-facebook-square"></i>
-      </span>
-    </a>
-    <a class="nav-item" href="/">
-      <span class="icon">
-        <i class="fa fa-home"></i>
-      </span>
-    </a>
-    <a class="nav-item">
-	  <span class="icon">
-		<i class="fa fa-info-circl"></i>
-	  </span>
-    </a>
-    <a class="nav-item">
-      Resume
-    </a>
-    <a class="nav-item is-danger" href="mysites">Homebase</a>
-  </div>
-</nav>
-
+  {% include '__navbar.html' %}
 
 
   <section class="hero is-dark is-bold is-fullheight">
